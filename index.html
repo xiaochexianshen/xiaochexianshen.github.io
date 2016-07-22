@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D书页</title>
+    <style>
+        main{
+            height: 700px;
+            border: 1px solid black;
+            perspective: 1500px;
+            perspective-origin: 30% 40%;
+            color: white;
+        }
+        .box{
+            width: 400px;
+            height: 550px;
+            margin: 60px auto 10px auto;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+        .box div{
+            width: 100%;
+            height: 100%;
+            border: 1px solid red;
+            position: absolute;
+            opacity: 0.8;
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            text-indent: 2rem;
+        }
+        span{
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+        .box div:nth-of-type(1){
+            background-color: red;
+            transform-origin: left;
+            transform: rotateY(-20deg);
+        }
+         .box div:nth-of-type(2){
+             background-color: cyan;
+             transform-origin: left;
+            transform: rotateY(-32deg);
+        }
+         .box div:nth-of-type(3){
+             background-color: darkslategray;
+            transform-origin: left;
+            transform: rotateY(-40deg);
+        }
+         .box div:nth-of-type(4){
+             padding: 40px;
+             box-sizing: border-box;
+             background-color: hotpink;
+            transform-origin: left;
+            transform: rotateY(-47deg);
+        }
+        .box div:nth-of-type(5){
+            background-color: blueviolet;
+            transform-origin: left;
+            transform: rotateY(-53deg);
+            transition: 2s;
+        }
+        .box div:nth-of-type(5) h2{
+            margin-top: 100px;
+            font-size: 35px;
+        }
+        .box div:nth-of-type(5) span{
+            bottom: 20px;
+            left: 200px;
+        }
+        .box:active div:nth-of-type(5){
+            transform: rotateY(-140deg);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">
+            <div>
+                <span>4</span>
+            </div>
+            <div>
+                <span>3</span>
+            </div>
+            <div>
+                <span>2</span>
+            </div>
+            <div>
+                <h2>引言</h2>
+                <p>粉丝速度开房间打开手机带来空间发的啥空间哈啥
+                    地方看见了看见来看看的时间发的是垃圾分类看电
+                    视看圣诞节疯家里睡觉呢是东方健康的时间反馈的
+                    时间狂圣诞节疯狂的时间开发的时间分离开的手机
+                    付款了圣诞节疯狂了圣诞节疯速度来看风景的刷卡
+                    机狂了倒计时附近的伤口会告诉对方
+                    </p>
+                <p>粉丝速度开房间打开手机带来空间发的啥空间哈啥
+                    地方看见了看见来看看的时间发的是垃圾分类看电
+                    视看圣诞节疯家里睡觉呢是东方健康的时间反馈的
+                    时间狂圣诞节疯狂的时间开发的时间分离开的手机
+                    付款了圣诞节疯狂了圣诞节疯速度来看风景的刷卡
+                    机狂了倒计时附近的伤口会告诉对方</p>
+                <span>1</span>
+            </div>
+            <div>
+                <h2>CSS图形变换入门</h2>
+                <span>智游教育</span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
